@@ -8,7 +8,7 @@ body{
 }
 .header{
     position: absolute;
-    height: 5%;
+    height: 10%;
     width: 100%;
     background-color: #ff4500;
     z-index: 5;
@@ -16,26 +16,125 @@ body{
 .sidebar{
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 150%;
     background-color: #ff0000;
     z-index: 4;
-    padding: 50px;
+    padding:50px;
 }
 .sidebar ul{
     list-style: none;
-    margin: o;
+    margin: 0;
     padding: 0;
 }
 .sidebar ul li{
     padding: 20px 10px;
-    border-bottom:1px solid #fff ;
+    border-bottom:2px solid #fff ;
+    text-align: center;
 }
 .sidebar ul li a{
     color: #ffffff;
     text-decoration: none;
 }
+/* small devices */
 @media screen and (min-width: 576px) {
     .sidebar{
         width: 50px;
     }
+    .sidebar ul li span:nth-child(2){
+        display: none;
+    }
+    .sidebar ul li i {
+        font-size: 40px;
+        
+    }
+    .main-content{
+        margin-left: 5opx ;
+    }
+}
+/* Extra small devices */
+@media (max-width: 575.98px) {
+    .sidebar{
+        width: 50px;
+    }
+    .sidebar ul li span:nth-child(2){
+        display: none;
+    }
+    .sidebar ul li i{
+        font-size: 40px;
+    }
+    .main-content{
+        margin-left: 50px;
+    }
+}
+@media (min-width:768px) {
+    .sidebar{
+        width: 100px;
+    }
+    .sidebar ul li span:nth-child(2){
+        display: none;      
+    }
+    .sidebar ul li {
+        text-align: center;
+    }
+    .sidebar ul li span:nt{
+        display: inline;
+    }
+    .sidebar ul li i{
+        font-size: 30px;
+    }
+    .main-content{
+        margin-left: 100px;
+    }
+}
+@media (min-with: 992px){
+    .sidebar{
+        width: 200px;
+    }
+    .sidebar ul li {
+        text-align: left;
+    }
+    .sidebar ul li span:nth-child(2){
+        display: inline;
+    }
+    .sidebar ul li i{
+        font-size: 20px;
+    }
+    .main-content{
+        margin-left: 200px;
+    }
+}
+@media (min-width: 1200px) {
+    .sidebar{
+        width: 200px;
+    }
+    .sidebar ul li {
+        text-align: left;
+    }
+    .sidebar ul li span:nth-child(2){
+        display: inline;
+    }
+    .sidebar ul li i{
+        font-size: 20px;
+    }
+    .main-content{
+        margin-left: 200px;
+    }
+}
+
+/* main content */
+.main-content{
+    padding-top: 80px;
+    background-attachment: fixed;
+}
+.container-fluid{
+    padding-top: 10px;
+}
+.col-lg-3{
+    padding-top: 10px;
+}
+.card-footer{
+   
+}
+.card-body i{
+    font-size:xx-large;
 }
