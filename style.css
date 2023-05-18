@@ -135,9 +135,10 @@ body{
 .card-footer{
    align-items: center;
    border: #ff0000;
-  text-align: center;
-  padding-top: 5px;
-   
+   text-align: center;
+   padding-top: 5px;
+   margin-top: 50px;
+   margin-bottom: 10px;
 }
 .card-body i{
     font-size:x-large;
