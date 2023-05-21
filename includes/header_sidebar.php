@@ -1,4 +1,9 @@
-<div class="sidebar">
+ <!-- header -->
+ <div class="header">
+        <img src="logo.jpg" alt="shachz computing School" height="50px" width="50px" class="rounded-circle pr-5">
+    </div>
+    <!-- sidebar -->
+    <div class="sidebar">
         <nav>
             <ul>
                 <li>
@@ -23,6 +28,12 @@
                     <a href="compuses.php">
                         <span><i class="bi bi-mortarboard-fill"></i></span>
                         <span>Campus</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.php">
+                        <span><i class="bi bi-mortarboard-fill"></i></span>
+                        <span>Users</span>
                     </a>
                 </li>
             </ul>

@@ -4,49 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-alpha/dist/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  
+    <title>Boostrap admin Template</title>
+    <?php require_once "includes/links.php" ?>
+
 </head>
 <body>
-     <!-- header -->
-     <div class="header">
-        <img src="logo.jpg" alt="shachz computing School" height="50px" width="50px" class="rounded-circle pr-5">
-    </div>
-    <!-- sidebar -->
-    <div class="sidebar">
-        <nav>
-            <ul>
-                <li>
-                    <a href="dashboard.php">
-                        <span><i class="bi bi-speedometer2"></i></span>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="students.php">
-                        <span><i class="bi bi-people"></i></span>
-                        <span>Students</span>
-                    </a>
-                </li>
-                  <li>
-                    <a href="courses.php">
-                        <span><i class="bi bi-folder2-open"></i></span>
-                        <span>Course</span>
-                    </a>
-                </li>
-                  <li>
-                    <a href="compuses.php">
-                        <span><i class="bi bi-mortarboard-fill"></i></span>
-                        <span>Campus</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+   <?php require_once "includes/header_sidebar.php"?>
     <!-- main-content -->
     <div class="main-content">
         <div class="container-fluid">
