@@ -25,7 +25,7 @@
                     </a>
                 </li>
                   <li>
-                    <a href="compuses.php">
+                    <a href="campuses.php">
                         <span><i class="bi bi-mortarboard-fill"></i></span>
                         <span>Campus</span>
                     </a>
