@@ -36,6 +36,12 @@
                         <span>Users</span>
                     </a>
                 </li>
+                <li>
+                    <a href="contactus.php">
+                        <span><i class="bi bi-mortarboard-fill"></i></span>
+                        <span>Contact Us</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>

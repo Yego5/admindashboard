@@ -13,7 +13,7 @@ $conn = mysqli_connect($server,$username,$password,$database);
     }
  
  // perfom SQL to fetch records
-    $sqlFetchDetailsRecord =  mysqli_query($conn, "SELECT * FROM register_your_details");
+    $sqlFetchDetailsRecord =  mysqli_query($conn, "SELECT * FROM eventwebsite");
 ?>
 
 
@@ -27,16 +27,18 @@ $conn = mysqli_connect($server,$username,$password,$database);
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header bg-dark text-white text-center">
-                            <span>Courses</span>
+                            <span>Contact Us</span>
                         </div>
                         <div class="card-body table-responsive">
                             <table class="table table-hover table-sm">
                                 <thead>
                                     <tr>
                                         <th>No.</th>
-                                        <th>NAME</th>
-                                        <th>EMAIL</th>
-                                        <th>COURSE</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Phone</th>
+                                        <th>Email</th>
+                                        <th>Message</th>
                                         <th>DATE OF REG</th>
                                         <th>ACTION</th>
                                     </tr>
@@ -47,14 +49,16 @@ $conn = mysqli_connect($server,$username,$password,$database);
                                     while ($row = mysqli_fetch_array($sqlFetchDetailsRecord)) { ?>
                                         <tr>
                                             <td><?php echo $count ?></td>
-                                            <td><?php echo $row['fullname'] ?></td>
+                                            <td><?php echo $row['firstname'] ?></td>
+                                            <td><?php echo $row['lastname'] ?></td>
+                                            <td><?php echo $row['phone'] ?></td>
                                             <td><?php echo $row['email'] ?></td>
-                                            <td><?php echo $row['course'] ?></td>
+                                            <td><?php echo $row['message'] ?></td>
                                             <td><?php echo $row['created_at'] ?></td>
                                             <td>
-                                                <a href="#" class="btn btn-success btn-sm">View</a>
-                                                <a href="#" class="btn btn-info btn-sm">Edith</a>
-                                                <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                                                <a href="editForm.php? Id= <?php echo $row['Id'] ?>" class="btn btn-success btn-sm ">View</a>
+                                                <a href="#" class="btn btn-info btn-sm ">Edith</a>
+                                                <a href="#" class="btn btn-danger btn-sm ">Delete</a>
                                             </td>
                                         </tr>
                                     <?php $count++;  } ?>       

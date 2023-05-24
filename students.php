@@ -41,21 +41,30 @@ $conn = mysqli_connect($server,$username,$password,$database);
                                         <th>GENDER</th>
                                         <!-- <th>COURSE</th> -->
                                         <th>DATE OF REG</th>
-                                        <!-- <th>ACTION</th> -->
+                                        <th>ACTION</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php while ($row = mysqli_fetch_array($sqlFetchDetailsRecord)) { ?>
+                                    <?php
+                                    $count =1;
+                                    while ($row = mysqli_fetch_array($sqlFetchDetailsRecord)) { ?>
                                         <tr>
-                                            <td><?php echo $row['id'] ?></td>
+                                            <td><?php echo $count ?></td>
                                             <td><?php echo $row['fullname'] ?></td>
                                             <td><?php echo $row['phone'] ?></td>
                                             <td><?php echo $row['email'] ?></td>
                                             <td><?php echo $row['gender'] ?></td>
                                             <!-- <td><?php echo $row['course'] ?></td> -->
                                             <td><?php echo $row['created_at'] ?></td>
+                                            <td>
+                                            <td>
+                                                <a href="#" class="btn btn-success btn-sm">View</a>
+                                                <a href="#" class="btn btn-info btn-sm">Edith</a>
+                                                <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                                            </td>
+                                            </td>
                                         </tr>
-                                    <?php  } ?>       
+                                    <?php $count++;  } ?>       
                                    
                                 </tbody>
                             </table>
